@@ -142,6 +142,21 @@ export default function Home() {
             <NightCard key={night.slug} night={night} />
           ))}
         </div>
+
+        <div className="mt-16">
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-royal mb-4">
+            Project Reference
+          </p>
+          <div className="rounded-2xl overflow-hidden shadow-lg aspect-video max-w-3xl">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/i6Ycm5TDnzU"
+              title="Crash Course Project Reference"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </section>
 
       {/* How to join */}
