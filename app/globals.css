@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body;
+}
+
+.prose-lesson h2 {
+  @apply font-display text-2xl md:text-3xl font-bold text-navy-2 mt-10 mb-4;
+}
+.prose-lesson h3 {
+  @apply font-display text-xl font-semibold text-royal mt-8 mb-3;
+}
+.prose-lesson p {
+  @apply text-slate-700 leading-relaxed mb-4;
+}
+.prose-lesson ul {
+  @apply list-disc pl-6 mb-4 space-y-1 text-slate-700;
+}
+.prose-lesson strong {
+  @apply text-navy-2 font-semibold;
+}
+.prose-lesson hr {
+  @apply border-slate-200 my-8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  }
